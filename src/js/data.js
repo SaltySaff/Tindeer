@@ -1,4 +1,4 @@
-const deer = [
+export const deer = [
   {
     name: "Rex",
     avatar: "images/dog-rex.jpg",
@@ -24,3 +24,5 @@ const deer = [
     hasBeenLiked: false,
   },
 ];
+
+export default deer
