@@ -29,6 +29,7 @@ aside {
 }
 
 button {
+  cursor: pointer;
   border: none;
   background: white;
   border-radius: 50%;
@@ -41,6 +42,12 @@ button {
   background-size: 1.5rem 1.5rem;
 }
 
+button:disabled {
+  background-color: #f0f0f0;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .reject-btn {
   background-image: url(../images/icon-cross.png);
 }
@@ -49,12 +56,12 @@ button {
   background-image: url(../images/icon-heart.png);
 }
 
-.reject-btn:hover {
-  background-color: #FFE7EF;
+.reject-btn:not(:disabled):hover {
+  background-color: #ffe7ef;
 }
 
-.accept-btn:hover {
-  background-color: #DBFFF4;
+.accept-btn:not(:disabled):hover {
+  background-color: #dbfff4;
 }
 
 .stamp {
@@ -73,7 +80,21 @@ button {
   display: none;
 }
 
-h2, p {
+.no-matches-msg {
+  font-size: 1.25rem;
+  display: none;
+  position: absolute;
+  margin: 0 2em 0 2em;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+}
+
+h2,
+p {
   margin: 0;
   color: white;
 }
@@ -89,5 +110,5 @@ h2, p {
 .img-container {
   height: 50vh;
   background-size: cover;
-  background-image: url('../images/dog-bella.jpg');
+  background-image: url("../images/dog-bella.jpg");
 }
