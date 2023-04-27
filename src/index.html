@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/index.js" defer></script>
     <title>Tindeer</title>
   </head>
@@ -18,24 +18,30 @@
     <header>
       <nav>
         <a href="#" aria-label="Profile">
-          <img src="images/icon-profile.png" alt="profile icon" />
+          <img class="nav-icon" src="images/icon-profile.png" alt="profile icon" />
         </a>
-        <img src="images/logo.png" alt="logo" />
+        <img class="nav-icon" src="images/logo.png" alt="logo" />
         <a href="#" aria-label="Chat">
-          <img src="images/icon-chat.png" alt="chat icon" />
+          <img class="nav-icon" src="images/icon-chat.png" alt="chat icon" />
         </a>
       </nav>
     </header>
     <main>
       <section class="main-container">
         <figure class="img-container">
-          <img src="images/dog-bella.jpg" alt="" />
+          <img class="stamp like-stamp" src="images/badge-like.png" alt="like stamp">
+          <img class="stamp nope-stamp" src="images/badge-nope.png" alt="nope stamp">
+          <figcaption class="profile-text">
+            <h2>some title</h3>
+            <p>some text</p>
+          </figcaption>
         </figure>
-        <article class="text-container"></article>
       </section>
       <aside class="btn-container">
-        <button class="reject-btn"></button>
-        <button class="accept-btn"></button>
+        <button class="reject-btn">
+        </button>
+        <button class="accept-btn">
+        </button>
       </aside>
     </main>
   </body>

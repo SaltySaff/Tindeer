@@ -1,5 +1,93 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: auto;
+  max-width: 530px;
+}
+
+nav {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+figure {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  border: none;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px #d6d6d6;
+  padding: 0.75em;
+  height: 4rem;
+  width: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5rem 1.5rem;
+}
+
+.reject-btn {
+  background-image: url(../images/icon-cross.png);
+}
+
+.accept-btn {
+  background-image: url(../images/icon-heart.png);
+}
+
+.reject-btn:hover {
+  background-color: #FFE7EF;
+}
+
+.accept-btn:hover {
+  background-color: #DBFFF4;
+}
+
+.stamp {
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  width: 12rem;
+  transform: rotate(-30deg);
+}
+
+.like-stamp {
+  display: none;
+}
+
+.nope-stamp {
+  display: none;
+}
+
+h2, p {
+  margin: 0;
+  color: white;
+}
+
+.btn-icon {
+  height: 1.5rem;
+}
+
+.nav-icon {
+  height: 1.5rem;
+}
+
+.img-container {
+  height: 50vh;
+  background-size: cover;
+  background-image: url('../images/dog-bella.jpg');
 }
